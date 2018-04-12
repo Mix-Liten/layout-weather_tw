@@ -1,0 +1,96 @@
+$color-red: #492645;
+$color-green: #6eaf4b;
+$color-blue: #36719f;
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-blue;
+  font-family: 'Do Hyeon', 微軟正黑體, sans-serif;
+  font-weight: 700;
+  color: $color-red;
+}
+[v-cloak] {
+  display: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 5.6rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 50px;
+  font-weight: 300;
+}
+#card {
+  width: 860px;
+  height: 480px;
+  background: rgba(#eee,0.75);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -20px 30px 116px 0 rgba($color-red, 0.54);
+  svg {
+    position: absolute;
+    height: 550px;
+    top: -35px;
+    left: -8%;
+    path {
+      stroke: #fff;
+      fill: rgba($color-green,0.8);
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        fill: rgba($color-green,0.5);
+        transform: translate(-4px, -4px);
+      }
+    }
+  }
+  
+  .title_area {
+    width: 380px;
+    height: calc(100% - 120px);
+    position: absolute;
+    padding: 75px 0;
+    right: 0%;
+    z-index: 99;
+    #icon {
+      img {
+        float: left;
+      }
+      h3 {
+        float: left;
+        margin-left: 5px;
+        line-height: 50px;
+      }
+      span {
+        font-size: 1rem;
+        line-height: 50px;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      clear: left;
+      padding-top: 30px;
+      list-style: none;
+      li {
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
